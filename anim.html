@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+</head>
+<body>
+    <p id="p1" style="text-align: center;"></p>
+
+    <script>
+        var i =10;
+        var mywait = setInterval(growtext, 100)
+        function growtext()
+        {
+            if(i < 51)
+            {
+                i += 1;
+                document.getElementById("p1").innerHTML = "Text Growing";
+                document.getElementById("p1").style.fontSize = (i+'pt');
+                document.getElementById("p1").style.color = "red";
+            }
+            else
+            {
+                clearInterval(mywait);
+                mywait = setInterval(shrinktext, 100);
+            }
+        }
+        function shrinktext()
+        {
+            if( i > 10)
+            {
+                i -= 1;
+                document.getElementById("p1").innerHTML = "Text Shrinking";
+                document.getElementById("p1").style.fontSize = (i+'pt');
+                document.getElementById("p1").style.color = "Blue";
+            }
+            else
+            {
+                clearInterval(mywait);
+                mywait = setInterval(growtext,100);
+            }
+        }
+
+    
+
+    </script>
+</body>
+</html>

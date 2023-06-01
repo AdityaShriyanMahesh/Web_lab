@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pic card</title>
+    <style>
+        figure {
+            border: 1pt solid #a8a8a8;
+            background-color: darkred;
+            padding: 5px;
+            width: 700px;
+            position: absolute; 
+            z-index: -1;
+            transform: rotate(45deg);
+            
+        }
+        figcaption{
+            padding: 5px;
+            
+            color: azure;
+            z-index: -1;
+            text-align: center;
+        }
+        img{
+            height: 400px;
+            width: 700px;
+        }
+        figure img{
+            transform: rotate(60deg) scale(0.5) ;
+        }
+        marquee{
+            font-size: 50px;
+            transform: skew(-20deg);
+        }
+    </style>
+
+</head>
+<body>
+    <figure>
+        <img src="./three.jpg" alt="Elden Ring">
+        <figcaption>Elden Ring</figcaption>
+    </figure>
+
+    <marquee>Elden Ring</marquee>
+    
+</body>
+</html>

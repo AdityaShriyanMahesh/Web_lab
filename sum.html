@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum()
+        {
+        var x = parseInt(document.getElementById("x").value)
+        var y = parseInt(document.getElementById("y").value)
+        result = x + y
+        document.getElementById("result").value = result
+        }
+        function mul()
+        {
+        var x = parseInt(document.getElementById("x").value)
+        var y = parseInt(document.getElementById("y").value)
+        result = x * y
+        document.getElementById("result").value = result
+        }
+        function sub()
+        {
+        var x = parseInt(document.getElementById("x").value)
+        var y = parseInt(document.getElementById("y").value)
+        result = x - y
+        document.getElementById("result").value = result
+        }
+         
+         
+    </script>
+    <style>
+        div{
+            background-color: aquamarine;
+            padding: 30px;
+            border: 5px black solid;
+            display: flexbox;
+            flex-direction: column;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <label for="x">Enter the first number:</label>
+    <input type="text" name="x" id="x"><br>
+    <label for="y">Enter the second number:</label>
+    <input type="text" name="y" id="y">
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <p><input type="text" id="result"></p>
+    </div>
+    
+</body>
+</html>

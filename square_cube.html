@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function square(x)
+        {
+            return result = x * x
+        }
+        function cube(y)
+        {
+           return result = y * y * y
+        }
+    </script>
+    <style>
+        
+
+        table, th, td {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+        tr{
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write('<table id="table1"><tr id="table1"><th id="table1">number</th><th id="table1">Square</th><th id="table1">Cube</th></tr>')
+        for(let i = 0; i<10;i++)
+        {
+            document.write('<table id="table2">')
+            document.write('<tr><td>'+i+ "</td>" +'<td>'+ square(i) + "</td>" +"<td>"+ cube(i) + '</td></tr>')
+            document.write('</table>')
+        }
+    </script>
+    
+</body>
+</html>

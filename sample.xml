@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="sample.css" ?>
+<college>
+<student>
+<name>NAME: Aditya</name>
+<usn>USN: 4SO20CS006</usn>
+<college>College: SJEC</college> 
+</student>  
+<student> 
+<name>NAME: SARAH</name>
+<usn>USN: 4SO20CS138</usn>
+<college>College: SJEC</college>   
+</student> 
+<student>  
+<name>NAME: SANSAR</name>
+<usn>USN: 4SO20CS010</usn>
+<college>College: SJEC</college>   
+</student>
+</college>
